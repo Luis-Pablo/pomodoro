@@ -37,8 +37,33 @@ function renderTasks () {
                     ${task.completed 
                         ?"<span class='done'>Done</span>"
                         :`<button class="start-button" data-id="${task.id}">Start</button> </div>`}
+                
                 <div class="title">${task.title}</div>
-
             </div>`
     })
+
+    const tasksContainer = document.querySelector('#tasks');
+    tasksContainer.innerHTML = html.join("");
+
+    const startButtons = document.querySelectorAll(".task .start-button");
+    startButtons.forEach((startButton) => {
+        startButtons.addEventListener("click", () => {
+            if (!timer) {
+                startButtonHandler(startButton.getAttribute("data-id"));
+                startButton.textContent = "In progress..."
+            }
+        });
+    });
+
+};
+
+function startButtonHandler(id) {
+    time = 0.5 * 60;
+    current = id;
+    const taskId = tasks.findIndex((task) => task.id === id);
+    document.querySelector('#time #taskName').textContent = tasks[taskId].title;
+    timer = setInterval(() => {
+        timerHandler(id);
+    }, 1000);
+
 }
