@@ -8,10 +8,7 @@ El boilerplate más básico para cualquier estudiante de 4Geeks Academy utilizan
 
 ## ¿Qué hacer a continuación?
 
-Crea un archivo `index.html` con [la estructura básica de HTML](http://content.breatheco.de/lesson/what-is-html-learn-html#page-structure) y ve el resultado en vivo corriendo un servidor web utilizando el siguiente comando:
-
-```sh
-$ pip3 install flask && python3 server.py
+Crea un archivo `index.html` con [la estructura básica de HTML](http://content.breatheco.de/lesson/what-is-html-learn-html#page-structure) y ve el resultado en vivo corriendo un servidor web utilizando el siguiente com
 ```
 
 - Puedes crear tantos archivos HTML cómo desees
