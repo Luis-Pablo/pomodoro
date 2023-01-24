@@ -27,6 +27,12 @@ body {
     justify-content: center;
 }
 
+input[type="text"] {
+    padding: 10px;
+    border: solid 1px #ccc;
+    width: 300px;
+}
+
 button, input[tipe="submit"] {
     border: none;
     background-color: #003366;
